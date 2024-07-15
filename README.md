@@ -55,4 +55,4 @@ The dataset is hosted on Kaggle, a popular platform for data science competition
 ## Task Specifications
 
 ### Data
-
+![Data Details](https://github.com/ArtificialIntelligenceResearch/Cassava-leaf-disease-classification-by-M.Nobi-/blob/main/Images/Screenshot%202024-07-15%20130344.png)

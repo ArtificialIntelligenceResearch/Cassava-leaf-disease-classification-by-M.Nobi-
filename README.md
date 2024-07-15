@@ -21,38 +21,66 @@
 
 ## Table of Contents
 1. [Introduction](#introduction)
-    - [Program Overview](#program-overview)
+   - 1.1 Program Overview
+   - 1.2 Challenge Objective
 2. [Data Source](#data-source)
-    - [Dataset Overview](#dataset-overview)
-    - [Accessing the Dataset](#accessing-the-dataset)
+   - 2.1 Dataset Overview
+   - 2.2 Accessing the Dataset
 3. [Task Specifications](#task-specifications)
-    - [Data Management](#data-management)
-        - [Data Acquisition](#data-acquisition)
-        - [Exploratory Data Analysis (EDA)](#exploratory-data-analysis-eda)
-        - [Data Preprocessing](#data-preprocessing)
-    - [Model Engineering](#model-engineering)
-        - [Dataset Splitting](#dataset-splitting)
-        - [Model Architecture](#model-architecture)
-        - [Model Training and Validation](#model-training-and-validation)
-    - [Evaluation and Analysis](#evaluation-and-analysis)
-        - [Performance Testing](#performance-testing)
-        - [Metrics Reporting](#metrics-reporting)
-    - [Conclusion and Future Work](#conclusion-and-future-work)
+   - 3.1 Data Management
+     - 3.1.1 Data Acquisition
+     - 3.1.2 Exploratory Data Analysis (EDA)
+     - 3.1.3 Data Preprocessing
+   - 3.2 Model Engineering
+     - 3.2.1 Dataset Splitting
+     - 3.2.2 Model Architecture
+     - 3.2.3 Model Training and Validation
+   - 3.3 Evaluation and Analysis
+     - 3.3.1 Performance Testing
+     - 3.3.2 Metrics Reporting
+   - 3.4 Conclusion and Future Work
+## 1. Introduction
 
-## Introduction
-
-### Program Overview
+### 1.1 Program Overview
 This project was done as a part of "Bytes of Intelligence: Data Science and AI Internship Program," which provides a comprehensive learning experience in data science and AI through workshops, challenges, and mentorship. This program is an innovative platform designed to propel aspiring data scientists and AI enthusiasts into the forefront of technological advancement and real-world problem-solving.
 
-## Data Source
+## 2. Data Source
 
-### Dataset Overview
+### 2.1 Dataset Overview
 The dataset for the Cassava Leaf Disease Classification Challenge is a comprehensive collection of annotated images representing various common diseases affecting cassava plants, one of the most crucial crop resources in tropical and subtropical regions. It includes thousands of high-resolution images categorized into several disease classes, as well as a category for healthy leaves. This provides 5 folders/classes of data; some data are incorrect as inside one named folder, one may find data of another folder. The dataset is highly imbalanced, with most images representing Cassava Mosaic Disease (CMD).
 
-### Accessing the Dataset
+### 2.2 Accessing the Dataset
 The dataset is hosted on Kaggle, a popular platform for data science competitions and collaborative projects.
 
-## Task Specifications
+## 3. Task Specifications
 
-### Data
+### 3.1 Data Management
+
+#### 3.1.1 Data Acquisition
+Data was downloaded from Kaggle
+
+#### 3.1.2 Exploratory Data Analysis(EDA)
+Conduct an in-depth EDA to understand the dataset's characteristics:
+   - **Distribution of Classes:** There was 5 class:
+     - **'Cassava Mosaic Disease (CMD)': 10526,**
+     -**'Healthy': 2061,**
+     -**'Cassava Green Mottle (CGM)': 1909,**
+     -**'Cassava Brown Streak Disease (CBSD)': 1751,**
+     -**'Cassava Bacterial Blight (CBB)': 870}**
+
+
+
 ![Data Details](https://github.com/ArtificialIntelligenceResearch/Cassava-leaf-disease-classification-by-M.Nobi-/blob/main/Images/Screenshot%202024-07-15%20130344.png)
+
+3. Task Specifications
+3.1 Data Management
+3.1.1 Data Acquisition
+Data was downloaded from Kaggle
+3.1.2 Exploratory Data Analysis (EDA)
+Conduct an in-depth EDA to understand the dataset's characteristics:
+Distribution of Classes: There was 5 class:
+'Cassava Mosaic Disease (CMD)': 10526,
+'Healthy': 2061,
+'Cassava Green Mottle (CGM)': 1909,
+'Cassava Brown Streak Disease (CBSD)': 1751,
+'Cassava Bacterial Blight (CBB)': 870}

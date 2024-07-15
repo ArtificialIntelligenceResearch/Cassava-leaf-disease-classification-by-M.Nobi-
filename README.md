@@ -72,15 +72,6 @@ Conduct an in-depth EDA to understand the dataset's characteristics:
 
 ![Data Details](https://github.com/ArtificialIntelligenceResearch/Cassava-leaf-disease-classification-by-M.Nobi-/blob/main/Images/Screenshot%202024-07-15%20130344.png)
 
-3. Task Specifications
-3.1 Data Management
-3.1.1 Data Acquisition
-Data was downloaded from Kaggle
-3.1.2 Exploratory Data Analysis (EDA)
-Conduct an in-depth EDA to understand the dataset's characteristics:
-Distribution of Classes: There was 5 class:
-'Cassava Mosaic Disease (CMD)': 10526,
-'Healthy': 2061,
-'Cassava Green Mottle (CGM)': 1909,
-'Cassava Brown Streak Disease (CBSD)': 1751,
-'Cassava Bacterial Blight (CBB)': 870}
+**Image Quality and Variability:** Most of the image was high resulation having 800*600 shape.
+**Data Insights:** Some data are incorrect as inside one named folder one may find data of another folder. Dataset is highly imbalace.
+Most of them are Cassava Mosaic Disease (CMD).

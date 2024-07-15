@@ -86,3 +86,37 @@ model was tested on both balanced and unbalanced data.
 Test was done on both custom model .
 Mostly used Convolution and Maxpooling layer were used repetedly. Then in the second part dense and dropout layer used after flattening.
 
+![Model History](https://github.com/ArtificialIntelligenceResearch/Cassava-leaf-disease-classification-by-M.Nobi-/blob/main/Images/Screenshot%202024-07-15%20203319.png)
+
+### 3.2.1 Dataset Spliting
+The dataset was divided into three subsets: Train dataset provided by kaggle divided into 2 set
+- **Training Set:** The largest portion, used to train the model. 80% of the Train dataset provided by kaggle was used for training.
+- **Validation Set:** Used to tune model parameters and prevent overfitting. 20% of the Train dataset provided by kaggle was used as validation dataset.
+- Test dataset provided by kaggle was reserved for evaluating the model's performance on unseen data.
+
+### 3.2.2 Model Architecture
+**Layer Structure:**
+- In the first section 7 Convolutional layer followed by 7 Maxpooling layer used , number of neurons were 32, 64 & 128. kernel size
+were (3,3) .
+
+```sh
+input_shape = (256,256,3)
+
+inputs = Input(shape=input_shape)
+
+model = augment(inputs)
+model = Conv2D(32,(3,3),activation = 'relu')(model)
+model = MaxPooling2D((2,2))(model)
+model = Conv2D(64,(3,3),activation = 'relu')(model)
+model = MaxPooling2D((2,2))(model)
+model = Conv2D(64,(3,3),activation = 'relu')(model)
+model = MaxPooling2D((2,2))(model)
+model = Conv2D(128,(3,3),activation = 'relu')(model)
+model = MaxPooling2D((2,2))(model)
+model = Conv2D(128,(3,3),activation = 'relu')(model)
+model = MaxPooling2D((2,2))(model)       
+ ```sh
+
+
+- In the second part 2 dense layer were used followed by dropout layer after flattening. In this case number of neurons or filters were
+256, 128 and 35% and 30% dropout was done to prevent overfitting.

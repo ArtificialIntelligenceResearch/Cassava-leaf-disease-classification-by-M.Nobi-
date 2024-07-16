@@ -138,4 +138,6 @@ Model was tranied on both balanced and unbalanced data for 50 epoch.
 - Training and validation accuracy by custom model on balanced dataset
 - ![accuracy graph](https://github.com/ArtificialIntelligenceResearch/Cassava-leaf-disease-classification-by-M.Nobi-/blob/main/Images/Screenshot%202024-07-16%20124624.png)
 - Training and validation accuracy by custom model on un-balanced dataset
-- ![loss graph]()
+- ![loss graph](https://github.com/ArtificialIntelligenceResearch/Cassava-leaf-disease-classification-by-M.Nobi-/blob/main/Images/Screenshot%202024-07-16%20125049.png)
+## 3.3 Evaluation and Analysis
+- Validation and test accuracy by custom model on balanced dataset

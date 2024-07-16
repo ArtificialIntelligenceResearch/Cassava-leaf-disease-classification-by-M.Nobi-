@@ -99,7 +99,7 @@ The dataset was divided into three subsets: Train dataset provided by kaggle div
 - In the first section 7 Convolutional layer followed by 7 Maxpooling layer used , number of neurons were 32, 64 & 128. kernel size
 were (3,3) .
 
-```sh
+```
 input_shape = (256,256,3)
 
 inputs = Input(shape=input_shape)
@@ -115,8 +115,24 @@ model = Conv2D(128,(3,3),activation = 'relu')(model)
 model = MaxPooling2D((2,2))(model)
 model = Conv2D(128,(3,3),activation = 'relu')(model)
 model = MaxPooling2D((2,2))(model)       
- ```sh
+ ```
 
 
 - In the second part 2 dense layer were used followed by dropout layer after flattening. In this case number of neurons or filters were
 256, 128 and 35% and 30% dropout was done to prevent overfitting.
+ ```
+ model = Flatten()(model)
+model = Dense(512,activation='relu')(model)
+model = Dense(256,activation='relu')(model)
+model = Dense(128,activation='relu')(model)
+model = Dense(64,activation='relu')(model)
+model = Dense(32,activation='relu')(model)
+model = Dropout(0.2)(model)
+outputs = Dense(5,activation='softmax')(model)
+```
+- **Activation Functions:** Except the last layer where "Softmax" activation function was used in all other case "Relu" activation
+function was used.
+- **Transfer Learning:** Pretrained EfficientNetB0 model was used to compare the performance.
+### 3.2.3 Model Training and Validation
+Model was tranied on both balanced and unbalanced data for 50 epoch.
+- Training and validation accuracy by custom model on balanced dataset

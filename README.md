@@ -142,5 +142,7 @@ Model was tranied on both balanced and unbalanced data for 50 epoch.
 ## 3.3 Evaluation and Analysis
 - Validation and test accuracy by custom model on balanced dataset
 - ![evalution code and results](https://github.com/ArtificialIntelligenceResearch/Cassava-leaf-disease-classification-by-M.Nobi-/blob/main/Images/Screenshot%202024-07-16%20125555.png)
-###3.3.1 Performance Testing
+### 3.3.1 Performance Testing
 - Confusion Matrix by custom model on balanced dataset
+- ![confusion matrix](https://github.com/ArtificialIntelligenceResearch/Cassava-leaf-disease-classification-by-M.Nobi-/blob/main/Images/Screenshot%202024-07-16%20130020.png)
+- image prediction by custom model trained on balanced dataset
